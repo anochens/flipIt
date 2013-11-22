@@ -14,7 +14,7 @@ function init() {
 
 function db_connect() {
 	try {
-		$db = new PDO('mysql:host=localhost;dbname=flipIt;', 'bn_wordpress', 'abdb7b5cd0');
+		$db = new PDO('mysql:host=localhost;dbname=flipIt;', USER_NAME, PASSWORD);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 	catch(PDOException $e) {
